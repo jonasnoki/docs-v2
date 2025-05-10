@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="1.030" tests="2" failures="2">
+  <testsuite name="Root Suite" timestamp="2025-05-10T12:50:39" tests="0" file="cypress/e2e/content/article-links.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Article" timestamp="2025-05-10T12:50:39" tests="2" time="1.029" failures="2">
+    <testcase name="Article /example/ has valid internal links" time="0.000" classname="/example/ has valid internal links">
+      <failure message="The following error originated from your application code, not from Cypress.
+
+  &gt; $ is not defined
+
+When Cypress detects uncaught errors originating from your application it will automatically fail the current test.
+
+This behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.
+
+https://on.cypress.io/uncaught-exception-from-application" type="ReferenceError"><![CDATA[ReferenceError: The following error originated from your application code, not from Cypress.
+
+  > $ is not defined
+
+When Cypress detects uncaught errors originating from your application it will automatically fail the current test.
+
+This behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.
+
+https://on.cypress.io/uncaught-exception-from-application
+    at <unknown> (http://localhost:1315/js/footer.bundle.055b7e29427e94d6bdb8433091113d598fe83d73174aa68c26539df3204012a5.js:23:1)]]></failure>
+    </testcase>
+    <testcase name="Article /example/ has valid anchor links" time="0.000" classname="/example/ has valid anchor links">
+      <failure message="The following error originated from your application code, not from Cypress.
+
+  &gt; $ is not defined
+
+When Cypress detects uncaught errors originating from your application it will automatically fail the current test.
+
+This behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.
+
+https://on.cypress.io/uncaught-exception-from-application" type="ReferenceError"><![CDATA[ReferenceError: The following error originated from your application code, not from Cypress.
+
+  > $ is not defined
+
+When Cypress detects uncaught errors originating from your application it will automatically fail the current test.
+
+This behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.
+
+https://on.cypress.io/uncaught-exception-from-application
+    at <unknown> (http://localhost:1315/js/footer.bundle.055b7e29427e94d6bdb8433091113d598fe83d73174aa68c26539df3204012a5.js:23:1)]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>

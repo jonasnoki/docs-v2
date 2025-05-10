@@ -1,10 +1,10 @@
-const { defineConfig } = require('cypress');
-const process = require('process');
+import { defineConfig } from 'cypress';
+import { cwd as _cwd } from 'process';
 
-module.exports = defineConfig({
+export default defineConfig({
   e2e: {
     // Automatically prefix cy.visit() and cy.request() commands with a baseUrl.
-    baseUrl: 'http://localhost:1313',
+    baseUrl: 'http://localhost:1315',
     defaultCommandTimeout: 10000,
     pageLoadTimeout: 30000,
     responseTimeout: 30000,
@@ -28,7 +28,7 @@ module.exports = defineConfig({
           return new Promise((resolve, reject) => {
             const yq = require('js-yaml');
             const fs = require('fs');
-            const cwd = process.cwd();
+            const cwd = _cwd();
             try {
               resolve(
                 yq.load(fs.readFileSync(`${cwd}/data/${filename}.yml`, 'utf8'))

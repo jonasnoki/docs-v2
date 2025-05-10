@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 
-describe('Article links', () => {
+describe('Article', () => {
   const subjects = Cypress.env('test_subjects').split(',');
   // Always use HEAD for downloads to avoid timeouts
   const useHeadForDownloads = true;
@@ -81,7 +81,7 @@ describe('Article links', () => {
   }
 
   subjects.forEach((subject) => {
-    it(`contains valid internal links on ${subject}`, function () {
+    it(`${subject} has valid internal links`, function () {
       cy.visit(`${subject}`);
       // Test internal links
       // 1. Timeout and fail the test if article is not found
@@ -101,7 +101,7 @@ describe('Article links', () => {
       });
     });
 
-    it(`checks anchor links on ${subject} (with warnings for missing targets)`, function () {
+    it(`${subject} has valid anchor links`, function () {
       cy.visit(`${subject}`);
 
       // Track missing anchors for summary
@@ -152,7 +152,7 @@ describe('Article links', () => {
           });
       });
 
-      it(`contains valid external links on ${subject}`, function () {
+      it(`${subject} has valid external links`, function () {
         cy.visit(`${subject}`);
         // Test external links
         // 1. Timeout and fail the test if article is not found
